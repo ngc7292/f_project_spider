@@ -61,8 +61,7 @@ class ShCompanySpidar(scrapy.Spider):
             for company in company_list:
                 company_id = company['zqdm']
                 
-                stock_url = "http://vip.stock.finance.sina.com.cn/corp/go.php/vCI_CirculateStockHolder/stockid/{" \
-                            "s_id}/displaytype/30.phtml".format(
+                stock_url = "http://vip.stock.finance.sina.com.cn/corp/go.php/vCI_CirculateStockHolder/stockid/{s_id}/displaytype/30.phtml".format(
                     s_id=company_id)
                 
                 leader_url = "https://vip.stock.finance.sina.com.cn/corp/go.php/vCI_CorpManager/stockid/{c_id}.phtml".format(

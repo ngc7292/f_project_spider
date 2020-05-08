@@ -15,7 +15,6 @@ class FSpiderPipeline(object):
         print("test pipeline item")
         return item
 
-
 class NeoPipeline(object):
     """
     this pipeline is save the data from spider to neo4j database
